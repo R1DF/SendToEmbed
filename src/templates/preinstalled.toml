@@ -1,0 +1,17 @@
+[webhook]
+url = "https://discordapp.com/api/webhooks/"
+title = ""
+username = ""
+
+[author]
+name = ""
+icon = ""
+url = ""
+
+[embed]
+description = ""
+footer = ""
+timestamp = false
+fields = []
+files = []
+colour = "#919191"
