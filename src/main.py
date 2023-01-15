@@ -215,7 +215,7 @@ class SendToEmbed(Tk):
                     data = tomllib.load(f)
 
                 # Overwriting webhook data
-                self.webhook_username_entry.insert("end", data["webhook"]["url"])
+                self.webhook_url_entry.insert("end", data["webhook"]["url"])
                 self.webhook_title_entry.insert("end", data["webhook"]["title"])
                 self.webhook_username_entry.insert("end", data["webhook"]["username"])
 
