@@ -368,6 +368,7 @@ class SendToEmbed(Tk):
                 "https://discordapp.com/api/webhooks/") or webhook_url.lower().startswith(
             "http://discordapp.com/api/webhooks/")):
             messagebox.showerror("Error", "Please enter a valid webhook URL.")
+            self.send_button.config(state="normal")
             return
 
         # Getting other data
