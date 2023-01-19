@@ -362,6 +362,7 @@ class SendToEmbed(Tk):
         webhook_url = self.webhook_url_entry.get().strip()
         if not webhook_url:
             messagebox.showerror("Error", "Please enter a webhook URL.")
+            self.send_button.config(state="normal")
             return
 
         elif not (webhook_url.lower().startswith(
