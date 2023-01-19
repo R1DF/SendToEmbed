@@ -50,7 +50,7 @@ class SendToEmbed(Tk):
         self.webhook_url_label.pack()
 
         self.webhook_url_entry = Entry()
-        self.webhook_url_entry.insert(0, "https://discordapp.com/api/webhooks/")
+        self.webhook_url_entry.insert(0, "https://discord.com/api/webhooks/")
         self.webhook_url_entry.pack(fill="x")
 
         Divider(self, WIDTH)
@@ -365,8 +365,8 @@ class SendToEmbed(Tk):
             return
 
         elif not (webhook_url.lower().startswith(
-                "https://discordapp.com/api/webhooks/") or webhook_url.lower().startswith(
-            "http://discordapp.com/api/webhooks/")):
+                "https://discord.com/api/webhooks/") or webhook_url.lower().startswith(
+            "http://discord.com/api/webhooks/")):
             messagebox.showerror("Error", "Please enter a valid webhook URL.")
             self.send_button.config(state="normal")
             return
